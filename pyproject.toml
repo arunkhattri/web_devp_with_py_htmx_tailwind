@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "web-devp-with-py-htmx-tailwind"
+version = "0.1.0"
+description = "Web development with python featuring htmx and tailwind CSS"
+authors = ["arunkhattri <arunkhattri@outlook.com>"]
+license = "GPL_3_or_later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["all"], version = "^0.111.0"}
+jinja2-fragments = "^1.3.0"
+tinydb = "^4.8.0"
+python-multipart = "^0.0.9"
+pytailwindcss = "^0.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+pylint = "^3.2.2"
+isort = "^5.13.2"
+pytest = "^8.2.1"
+ipython = "^8.25.0"
+python-lsp-server = "^1.11.0"
+mypy = "^1.10.0"
+flake8 = "^7.0.0"
+ruff = "^0.4.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
