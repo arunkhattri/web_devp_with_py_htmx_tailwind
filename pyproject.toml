@@ -26,6 +26,9 @@ mypy = "^1.10.0"
 flake8 = "^7.0.0"
 ruff = "^0.4.7"
 
+[tool.poetry.scripts]
+tailwindcss_build_watch = "tailwindcss -i ./app/static/src/tw.css -o ./app/static/css/main.css --watch"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
